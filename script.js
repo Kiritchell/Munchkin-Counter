@@ -12,17 +12,13 @@ function decrease(){
     writtenPower.innerHTML = power
 }
 
-
 function save(){
-    let pastPower = power + " - "
-    saveEl.innerHTML += pastPower
-    console.log(power)
-
+    roundNumberClicks.onclick = function(){
+      count += 1;
+      console.log(count)
+      pastPower.innerHTML += 'Round ' + count + '  =  ' + power + '<br>'
+    }
 }
 
 
 
-
-// practice
-power = 0
-writtenPower.innerHTML = power
