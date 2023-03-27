@@ -19,7 +19,7 @@
     <title>Munchkin Power Counter</title>
     <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body onload="load()">
     <h1 class="main-title">
       <a href="https://kiritchell.netlify.app">Estetikk co.</a>
     </h1>
@@ -29,7 +29,7 @@
       <h1 id="page-title" class="h1">Munchkin Power Level</h1>
     </div>
     <div class="flex-center">
-      <h1 class="h1" id="power-el">1</h1>
+      <h1 class="h1" id="power-el">0</h1>
     </div>
     <div class="flex-center">
       <button class="button" id="increase-btn" onclick="increase()">
@@ -44,6 +44,7 @@
       <p class="flex-center p-normal" id="past-power">
         Past Power: <br /><br />
       </p>
+      <button class="button"  onclick="reset()">Reset</button>
     </div>
   </body>
   <script src="script.js"></script>
